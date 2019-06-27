@@ -1,0 +1,59 @@
+/*override kako bi se posvetlila slova linkova navigacije*/
+.navbar-dark .navbar-nav .nav-link {
+    color: #ccc;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+/*override za background color dropdown linkova*/
+.navbar-nav > li > .dropdown-menu { 
+    background-color: #333; 
+    
+}
+
+.dropdown-item:active {
+    color: #262626;
+    background-color: #fff;
+}
+
+.navbar-nav > li > .dropdown-menu a { 
+    color: #dfdfdf;
+}
+
+.navbar-nav > li > .dropdown-menu a:hover { 
+    color: #262626;
+}
+
+.btn-group-vertical > .dropdown-menu > li {
+    background-color: $bg-color-button-dropdown;
+    
+}
+
+.btn-block {
+    width: 100%;
+}
+
+// .history-links {
+//     ul {
+//         list-style: none;
+//         padding-left: 0;
+//         // width: 100%;
+//     }
+
+
+//     li a {
+//         color: #333;
+//         display: block;
+//         padding: 10px 8px;
+//         background-color: $bg-color-history-list;
+//         border-bottom: 3px solid #fff;
+//         text-decoration: none;
+                
+//             &:hover {
+//                 background-color: $bg-color-history-list-hover;
+//                 color: #fff;
+//         }
+//     }
+// }

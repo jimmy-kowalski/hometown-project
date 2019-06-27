@@ -1,0 +1,59 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: $myFont;
+    padding-top: 67px;
+}
+
+img {
+    width: 100%;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+.btn-primary:hover {
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 0;
+
+    .modal-header {
+        background: $primary-color;
+        color: #fff;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    
+        .modal-body {
+            padding: 1.2rem;
+        }
+        .close {
+            color: #fff;
+        }
+    }
+}
+
+
+/* Media Queries */
+@media (min-width: 576px) {
+    .modal-dialog {
+        margin: 5.75rem auto;
+    }
+}

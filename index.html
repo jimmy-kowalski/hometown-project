@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <title>Moj Beograd</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Djordje Baljic">
+    <meta name="description" content="Sajt posvećen Beogradu, sa mnoštvom aktuelnih i istorijskih informacija, i multimedijalnih sadržaja.">
+    <meta name="keywords" content="grad, Beograd, Srbija">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Merriweather:400,400i,700,700i&display=swap" rel="stylesheet"> 
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="search-box">
+            <form action="#" class="search-form">
+                <input type="text" name="" placeholder="Search...">
+                <div class="close"><i class="fas fa-times"></i></div>
+            </form>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top cbp-af-header">
+            <div class="container-fluid">
+                <!-- logo -->
+                <a class="navbar-brand" href="index.html"><img src="images/moj-bg-logo-white.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavBar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu items -->
+                <div class="collapse navbar-collapse" id="mainNavBar">
+                    <!-- <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Unesi pretragu">
+                        </div>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-search"></span> Pretraga
+                        </button>
+                    </form> -->
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">Početna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="istorija.html" class="nav-link">Istorija</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="kultura.html" class="nav-link">Kultura</a>
+                        </li>
+                        <!-- Dropdown list -->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Multimedija
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a href="photos.html" class="dropdown-item">Foto galerija</a>
+                                </li>
+                                <li>
+                                    <a href="video.html" class="dropdown-item">Video</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#newsletter">Newsletter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="kontakt.html" class="nav-link">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link search-icon"><i class="fas fa-search"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url(images/slider/kalemegdan-usce-lg.jpg);">
+                <!-- <img class="d-block w-100 img-fluid" src="images/kalemegdan-usce-lg.jpg" alt="Vatromet"> -->
+                <div class="carousel-caption text-center">
+                    <h1>"Ko je imao sreće da se danas probudi u Beogradu, <br> može se smatrati da je dovoljno postigao u životu."</h1>
+                    <h3>Duško Radović</h3>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url(images/slider/beograd-night-lg.jpg);">
+                <!-- <img class="d-block w-100 img-fluid" src="images/hram_panorama_lg.jpg" alt="Panorama1"> -->
+            </div>
+            <div class="carousel-item" style="background-image: url(images/slider/slavija_panorama_lg.jpg);">
+                <!-- <img class="d-block w-100 img-fluid" src="images/slavija_panorama_lg.jpg" alt="Panorama2"> -->
+            </div>
+        </div>
+        <!-- Controls -->
+        <!-- <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a> -->
+    </div>
+
+    <!-- Content Boxes -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 wow fadeInLeft">
+                    <figure class="content-box">
+                        <img class="content-image" src="images/bg_tvrdjava_sm.jpg" alt="Istorija foto">
+                        <figcaption>
+                          <h2 class="content-title">Istorija</h2>
+                          <p class="content-desc"><a href="istorija.html">Saznaj više o bogatoj prošlosti Beograda</a></p>
+                          <!-- <a href="istorija.html" class="content-link">Više informacija</a> -->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 wow fadeInDown">
+                    <figure class="content-box">
+                        <img class="content-image" src="images/fest_sm.jpg" alt="Kultura foto">
+                        <figcaption>
+                          <h2 class="content-title">Kultura</h2>
+                          <p class="content-desc"><a href="kultura.html">Poseti neku od kulturnih i zabavnih manifestacija</a></p>
+                          <!-- <a href="kultura.html" class="content-link">Više informacija</a> -->
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 wow fadeInRight">
+                    <figure class="content-box">
+                        <img class="content-image" src="images/knez-mihailova_sm.jpg" alt="foto">
+                        <figcaption>
+                          <h2 class="content-title">Foto galerija</h2>
+                          <p class="content-desc"><a href="photos.html">Upoznaj Beograd putem foto galerije</a></p>
+                          <!-- <a href="photos.html" class="content-link">Pogledaj</a> -->
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Weather & Poll -->
+    <section class="weather-poll" id="weather-poll">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 wow slideInLeft">
+                    <div class="weather">
+                        <div class="col-12 weather-header">
+                            <h2>Vreme u Beogradu</h2>
+                        </div>
+                        <div id="weather-sm" class="weather-sm d-xs-block d-md-none col-xs-12 ">
+                            <img class="current-weather-icon mx-auto d-block" src="" alt="">
+                            <p class="current-temp text-center"></p>
+                            <p class="current-wind text-center"></p>
+                            <p class="current-precip text-center"></p>
+                            <p class="current-humidity text-center"></p>
+                            <p class="current-pressure text-center"></p>
+                        </div>
+    
+                        <div class="row weather-body">
+                            <div id="weather-data" class="weather-data d-none d-md-block col-md-3">
+                                <!-- <p class="weather-details">Padavine:</p>
+                                <p class="weather-details">Vetar:</p>
+                                <p class="weather-details">Vlažnost:</p>
+                                <p class="weather-details">Pritisak:</p> -->
+                            </div>
+    
+                            <div id="weather-current" class="d-none d-md-block col-md-3">
+                                <p class="current text-center">Trenutno:</p>
+                                <img class="current-weather-icon mx-auto d-block" src="" alt="">
+                                <p class="current-temp text-center"></p>
+                            </div>
+    
+                            <div id="forecast" class="d-none d-md-block col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p id="date0" class="date text-center"></p>
+                                        <img class="forecast-icon mx-auto d-block" src="" alt="">
+                                        <button id="button0" class="btn btn-secondary btn-sm" type="button">Detalji</button>
+                                        <div class="details-hidden">
+                                            <div id="details0" class="details hidden">
+                                                <p id="min0" class="min-temp text-center">min:</p>
+                                                <p id="max0" class="max-temp text-center">max:</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-6">
+                                        <p id="date1" class="date text-center"></p>
+                                        <img class="forecast-icon mx-auto d-block" src="" alt="">
+                                        <button id="button1" class="btn btn-secondary btn-sm" type="button">Detalji</button>
+                                        <div class="details-hidden">
+                                            <div id="details1" class="details hidden">
+                                                <p id="min1" class="min-temp text-center">min:</p>
+                                                <p id="max1" class="max-temp text-center">max:</p>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                                
+                            </div>
+    
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Poll -->
+                <div class="col-lg-6 wow slideInRight">
+                    <div class="poll">
+                        <div class="col-12 poll-container">
+                            <div class="poll-question">
+                                <h2>Koja su vam omiljena mesta za izlazak u Beogradu?</h2>
+                            </div>
+                            <div><span>0</span><a href="">Glasaj</a>Pozorišta/Bioskopi</div>
+                            <div><span>0</span><a href="">Glasaj</a>Muzeji</div>
+                            <div><span>0</span><a href="">Glasaj</a>Restorani/Kafići</div>
+                            <div><span>0</span><a href="">Glasaj</a>Noćni klubovi/Splavovi</div>
+                            <div><span>0</span><a href="">Glasaj</a>Šoping molovi</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="row">
+
+            <div class="social-left col-md-4">
+                <ul>
+                    <li>
+                        <a href="http://www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.com" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.instagram.com" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.youtube.com" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://plus.google.com" target="_blank">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <hr class="d-none d-xs-block d-md-none"> -->
+
+            <div class="col-md-4">
+                <h4>Copyright &copy; Moj Beograd 2018</h4>
+            </div>
+
+            <div class="social-right col-md-4">
+                <ul>
+                    <li>
+                        <a href="http://www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.com" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.instagram.com" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.youtube.com" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://plus.google.com" target="_blank">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="newsletter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Moj Beograd Newsletter</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+
+            <div class="modal-body">
+                <p>Pretplati se na <i>Moj Beograd</i> newsletter kako bi svake nedelje dobijao informacije o svim važnim kulturnim, zabavnim i sportskim dešavanjima u Beogradu.</p>
+                <div class="input-group mt-5">
+                    <input type="email" class="form-control" placeholder="Unesi svoj email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="button-addon2">Pošalji</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/popper.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <!-- <script src="js/jquery.nanogallery.min.js"></script> -->
+    <script src="js/wow.min.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/myscript.js"></script>
+
+</body>
+
+</html>

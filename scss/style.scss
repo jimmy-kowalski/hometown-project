@@ -1,0 +1,109 @@
+/*----------  base
+------------------------------------------------------------------------------*/
+/*@import "base/reset";*/
+@import "base/variables";
+@import "base/general";
+
+/*----------  helpers
+------------------------------------------------------------------------------*/
+@import "helpers/mixins";   
+
+/*----------  layout
+------------------------------------------------------------------------------*/
+@import "layout/header"; 
+@import "layout/layout";
+@import "layout/footer";    
+
+/*----------  components
+------------------------------------------------------------------------------*/
+@import "components/navigation";
+@import "components/carousel";
+
+/*----------  pages
+------------------------------------------------------------------------------*/
+@import "pages/home";
+@import "pages/contact";
+@import "pages/photos";
+@import "pages/video";
+
+
+
+/*media queries*/
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    // body {
+    //     padding-top: 160px;
+    // }
+} 
+
+// @media screen and (min-width: 768px) {
+
+//     .navbar {
+//         @include border-radius(0px);
+// }
+// }
+
+// /* izjednacavanje razlicitih visina kolona*/
+
+// @media screen and (min-width: 768px) {
+//     .container-sm-height {
+//         display:table;
+//         padding: {
+//             left:0px;
+//             right:0px;
+//         }
+//     }
+//     .row-sm-height {
+//         display:table-row;
+//     }
+//     .col-sm-height {
+//         display:table-cell;
+//         float:none;
+//     }
+// }
+
+// @media screen and (min-width: 992px) {
+//     .social-left ul {
+//         display:none;
+//     }
+// }
+
+// @media screen and (max-width: 991px) {
+//     .social-right ul {
+//         display:none;
+//     }
+// }
+
+// @media screen and (max-width: 991px) {
+//     footer h4 {
+//         padding-left: 40px;
+        
+//     }
+// }
+
+// @media screen and (max-width: 991px) {
+//     .content-element {
+//     padding-bottom: 30px; 
+// }
+
+// }
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+

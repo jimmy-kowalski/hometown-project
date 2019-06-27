@@ -1,0 +1,116 @@
+/* istorija i kultura stranice */
+aside {
+    background-color: $bg-color-dark;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h3 {
+        color: #fff;
+    }
+
+    .btn {
+        border-radius: 0 !important;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+
+    .btn-primary {
+        background: $primary-color;
+        border-color: lighten($primary-color, 10%);
+
+        &:hover {
+            background: darken($primary-color, 10%);
+            border-color: darken($primary-color, 10%);
+        }
+
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
+
+    .btn-group {
+        .dropdown-menu {
+            background: lighten($primary-color, 60%);
+        }
+    }
+
+    .btn-group.show {
+        .btn-primary.dropdown-toggle {
+            background-color: darken($primary-color, 10%);
+            border-color: darken($primary-color, 10%);
+        }
+
+        .btn-primary.dropdown-toggle:focus {
+            box-shadow: none !important;
+        }
+    }
+
+    .dropdown-menu{
+        transform: translate3d(0, 35px, 0)!important;
+        border-radius: 0;
+    }
+}
+
+.articles {
+    background: $bg-color-darker;
+}
+
+article {
+    padding: 40px;
+    background: #fff;
+    margin: 20px 0;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, .2);;
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        background: lighten($primary-color, 10%);
+        border-color: lighten($primary-color, 10%);
+
+        &:hover {
+            background: darken($primary-color, 10%);
+            border-color: darken($primary-color, 10%);
+        }
+
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
+}
+
+.pagination {
+    .page-item {
+        &.active .page-link {
+            background-color: $primary-color;
+            border-color: $primary-color;
+        }
+    }
+}
+
+/* izjednacavanje razlicitih visina kolona*/
+
+// @media screen and (min-width: 768px) {
+//     .container-md-height {
+//         display:table;
+//         padding: {
+//             left:0px;
+//             right:0px;
+//         }
+//     }
+//     .row-md-height {
+//         display:table-row;
+//     }
+//     .col-md-height {
+//         display:table-cell;
+//         float:none;
+//     }
+// }

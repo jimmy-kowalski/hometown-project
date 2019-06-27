@@ -1,0 +1,180 @@
+/* sekcija ispod karusela*/
+.content-section {
+    padding: 100px 0;
+}
+
+.content-box {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.5);
+
+    figcaption {
+        position: absolute;
+        top: 70%; 
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 1em;
+        background: rgba($primary-color, .5);
+        color: #fff;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        // justify-content: flex-end; // da bude pri dnu
+        transition: ease-in-out .5s;
+
+    }
+
+    .content-title {
+        font-size: 1.8rem;
+        margin-bottom: auto; // da bude pri dnu 
+        text-shadow: 1px 1px 8px #000;
+    }
+
+    .content-desc {
+        opacity: 0;
+        
+    }
+    .content-desc a {
+        color: #fff;
+    }
+    
+    &:hover figcaption, &:focus figcaption,
+    &:hover .content-desc, &:focus .content-desc {
+        top: 0; 
+        opacity: 1;
+    }
+}
+
+/* Weather & Poll */
+.weather-poll {
+    padding: 50px 0;
+    background: $bg-color-light;
+}
+
+.weather {
+    background: lightblue;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+
+    img {
+        width: 64px;
+    }
+
+    .btn-secondary {
+        margin: 10px 25%;
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &:not(:disabled):not(.disabled):active {
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+        }
+    }
+}
+
+.weather-header {
+    background: $primary-color;
+    color: #fff;
+    padding: 7px 15px;
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+}
+
+.weather-body {
+    padding: 15px;
+}
+
+.weather-data {
+    margin-top: 30px;
+
+    .weather-details {
+        font-size: .8rem;
+    }
+}
+
+.current-temp {
+    font-size: 1.5rem;
+}
+
+
+.details-hidden {
+    height: 60px;
+
+    .min-temp, .max-temp {
+        font-size: .9rem;
+    } 
+}
+
+/* Poll */
+
+.poll {
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+
+}
+.poll-container {
+    background: darken($primary-color, 20%);
+    padding: 10px 15px;
+
+    .poll-question {
+        margin-bottom: 15px;
+
+        h2 {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+    }
+    div:not(:first-child) {
+        background: #0099cc;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 1.1rem;
+        color: #fff;
+        width: 380px;
+        border-radius: 0 50px 50px 0;
+
+        a {
+            border-radius: 10px;
+            text-decoration: none;
+            color: #0099cc;
+            padding: 5px 15px;
+            background: #333;
+            margin: 0 20px;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .content-box {
+        margin-bottom: 1.5rem;
+
+        figcaption {
+            top: 85%; 
+        }
+
+    }
+
+    .poll {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .content-box {
+        
+        figcaption {
+            top: 80%; 
+        }
+
+    }
+}
